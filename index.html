@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI課題</title>
+    <link rel="stylesheet" href="sources/style.css">
+</head>
+<body id="body">
+    <header>すべての曲</header>
+    <section id="info">
+        <div id="headerSpace">あああああああ</div>
+        <div class="lyrics">
+            <span id="title"></span><br>
+            <span id="composer"></span><br>
+            <hr color="#999" size="1" noshade>
+            <span id="lyrics"></span>
+        </div>
+        <iframe id="ytPlayer" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div id="randomWin"><span id="Q">？</span></div>
+    </section>
+    <section id="listBox">
+        <span id="list"></span>
+        <div style="height: 150px;width: auto;"></div>
+    </section>
+    <div id="sortDisp">
+        <div class="button" id="randomBtn">≡</div>
+        <div class="randomMenu">
+            <div class="menuOption" id="shuffleBtn">シャッフル</div>
+            <div class="menuOption" id="randomSongBtn">リストからランダム選曲</div>
+            <div class="menuOption" onclick="sorry()">並び順を変える</div>
+            <div class="menuOption" onclick="sorry()">リスト内の曲を検索する</div>
+        </div>
+        <div class="mask" id="mask2"></div>
+    </div>
+    <div id="addDisp">
+        <div class="button" id="addBtn">＋</div>
+        <div class="addMenu">
+            <div class="menuOption2" id="addSongBtn">曲を追加</div>
+            <div class="menuOption2" onclick="sorry2()">プレイリストを追加</div>
+            <div class="menuOption2" id="exportBtn">CSVとしてエクスポート</div>
+            <div class="menuOption2" onclick="sorry2()">CSVデータをインポート</div>
+        </div>
+        <div class="mask" id="mask"></div>
+    </div>
+    <div id="songAddDisp">
+        <div class="inputWin" id="inputWin">
+            <div id="winTitle"></div>
+            <hr color="#999" size="1" noshade>
+            <span id="formBox"></span>
+            <button class="addSongBtn" id="cancel">やめる</button><button class="addSongBtn" id="submit">追加</button>
+        </div>
+        <div class="mask" id="mask3"></div>
+    </div>
+    <!--
+    <div id="firstNotice">
+        <span>
+            <h2>デモ版について</h2>
+            <ul>
+                <li>制作が間に合わなかった機能が多く、肝心な部分がかなり省かれています。申し訳ありません。</li>
+                <li>プレイリストの切り替えは左右のスワイプで行う想定です。プレイリストの追加は＋ボタンから。プレイリストに曲を追加する動作は曲を長押しすることで表示されるメニューから行うか、＋ボタンから実行できる想定です。</li>
+                <li>CSVのインポートについても未実装ですが、これはプレイリスト機能の実装状況が芳しくないことを鑑み、連鎖的に未実装となっています。出力は可能で、ダウンロードしたファイルはExcelなどで表示可能です。</li>
+            </ul>
+            <a>この画面を閉じる</a>
+        </span>
+    </div>
+    -->
+    <script type="text/javascript" src="sources/script.js"></script>
+</body>
+</html>
