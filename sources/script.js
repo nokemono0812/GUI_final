@@ -153,7 +153,7 @@ addSongBtn.addEventListener("click", function(){
     submitMode = 1;
     execAddSongBtn.innerHTML = "追加";
     document.getElementById("winTitle").innerHTML = "曲を追加";
-    document.getElementById("formBox").innerHTML = '<span id="err"></span>曲名はなに？ ※<input type="text" class="textInput" placeholder="曲名" id="songNm">作曲者はだれ？<input type="text" class="textInput" placeholder="アーティスト名" id="artistNm">ジャンルはある？<select class="textInput2" id="genre"><option value="">ジャンルなし</option><option value="ロック">ロック</option><option value="ダンス">ダンス</option><option value="J-POP">J-POP</option><option value="アニソン">アニソン</option><option value="演歌">演歌</option></select>歌詞は？<textarea rows="5" class="textInput" placeholder="歌詞" id="lyricsIn"></textarea>YouTubeのリンク<input type="text" class="textInput" placeholder="https://youtu.be/eXamPLe" id="ytIn">';
+    document.getElementById("formBox").innerHTML = '<span id="err"></span>曲名はなに？ ※<input type="text" class="textInput" placeholder="曲名" id="songNm">作曲者はだれ？<input type="text" class="textInput" placeholder="アーティスト名" id="artistNm">ジャンルはある？<select class="textInput2" id="genre"><option value="">ジャンルなし</option><option value="ロック">ロック</option><option value="ダンス">ダンス</option><option value="J-POP">J-POP</option><option value="アニソン">アニソン</option><option value="演歌">演歌</option></select>歌詞をどうぞ<textarea rows="5" class="textInput" placeholder="歌詞" id="lyricsIn"></textarea>YouTubeのリンク<input type="text" class="textInput" placeholder="https://youtu.be/eXamPLe" id="ytIn">';
     songAddMenu.classList.add("open");
     addMenu.classList.remove("open");
 });
